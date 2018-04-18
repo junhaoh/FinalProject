@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         presentLogin()
         
     }
@@ -69,10 +68,18 @@ class LoginViewController: UIViewController {
             .onCancel {
                 print("User cancelled")
             }
-            
             .present(from: self)
-
     }
-   
+    
+    
+    @IBAction func weather(_ sender: UIButton) {
+        performSegue(withIdentifier: "toWeather", sender: self)
+    }
+    
+    
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        presentLogin()
+    }
+    
 }
 
