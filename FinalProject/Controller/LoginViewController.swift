@@ -76,6 +76,11 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "toWeather", sender: self)
     }
     
+    @IBAction func chatRoom(_ sender: UIButton) {
+        performSegue(withIdentifier: "toChatRoom", sender: self)
+    }
+    
+    
     
     @IBAction func logout(_ sender: UIBarButtonItem) {
         presentLogin()

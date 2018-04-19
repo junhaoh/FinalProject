@@ -16,6 +16,11 @@
 		202D3B432082784A003DF1B8 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 202D3B422082784A003DF1B8 /* Auth0.plist */; };
 		202D3B472086C141003DF1B8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D3B462086C141003DF1B8 /* WeatherViewController.swift */; };
 		202D3B492087EBDA003DF1B8 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D3B482087EBDA003DF1B8 /* WeatherDataModel.swift */; };
+		202D3B4B20881115003DF1B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 202D3B4A20881115003DF1B8 /* GoogleService-Info.plist */; };
+		202D3B4E208814FF003DF1B8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D3B4C208814FF003DF1B8 /* ChatViewController.swift */; };
+		202D3B52208818CE003DF1B8 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D3B50208818CE003DF1B8 /* MessageTableViewCell.swift */; };
+		202D3B53208818CE003DF1B8 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202D3B51208818CE003DF1B8 /* MessageTableViewCell.xib */; };
+		202D3B5520881F63003DF1B8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D3B5420881F63003DF1B8 /* Message.swift */; };
 		FE9ABEF4BFBAD1CAB2D6A4BB /* Pods_FinalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92410375D49CB60AC2E3C59 /* Pods_FinalProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,11 @@
 		202D3B4520869E56003DF1B8 /* FinalProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalProject.entitlements; sourceTree = "<group>"; };
 		202D3B462086C141003DF1B8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		202D3B482087EBDA003DF1B8 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		202D3B4A20881115003DF1B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		202D3B4C208814FF003DF1B8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		202D3B50208818CE003DF1B8 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		202D3B51208818CE003DF1B8 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		202D3B5420881F63003DF1B8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A54D3036B1F5D6CEA4E4C01B /* Pods-FinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.release.xcconfig"; sourceTree = "<group>"; };
 		E92410375D49CB60AC2E3C59 /* Pods_FinalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA564325C0F6816F4F133F9 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				202D3B482087EBDA003DF1B8 /* WeatherDataModel.swift */,
+				202D3B5420881F63003DF1B8 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +104,8 @@
 			children = (
 				202D3B2E20826FE6003DF1B8 /* Main.storyboard */,
 				202D3B3320826FE7003DF1B8 /* LaunchScreen.storyboard */,
+				202D3B50208818CE003DF1B8 /* MessageTableViewCell.swift */,
+				202D3B51208818CE003DF1B8 /* MessageTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +116,7 @@
 				202D3B2A20826FE5003DF1B8 /* AppDelegate.swift */,
 				202D3B2C20826FE5003DF1B8 /* LoginViewController.swift */,
 				202D3B462086C141003DF1B8 /* WeatherViewController.swift */,
+				202D3B4C208814FF003DF1B8 /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -110,6 +124,7 @@
 		202D3B3F2082705F003DF1B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				202D3B4A20881115003DF1B8 /* GoogleService-Info.plist */,
 				202D3B402082709D003DF1B8 /* Default-568h@2x.png */,
 				202D3B3120826FE7003DF1B8 /* Assets.xcassets */,
 				202D3B422082784A003DF1B8 /* Auth0.plist */,
@@ -205,6 +220,8 @@
 				202D3B412082709D003DF1B8 /* Default-568h@2x.png in Resources */,
 				202D3B3220826FE7003DF1B8 /* Assets.xcassets in Resources */,
 				202D3B3020826FE6003DF1B8 /* Main.storyboard in Resources */,
+				202D3B53208818CE003DF1B8 /* MessageTableViewCell.xib in Resources */,
+				202D3B4B20881115003DF1B8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 				"${BUILT_PRODUCTS_DIR}/Lock/Lock.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -251,6 +269,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lock.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +305,10 @@
 				202D3B492087EBDA003DF1B8 /* WeatherDataModel.swift in Sources */,
 				202D3B2D20826FE5003DF1B8 /* LoginViewController.swift in Sources */,
 				202D3B472086C141003DF1B8 /* WeatherViewController.swift in Sources */,
+				202D3B4E208814FF003DF1B8 /* ChatViewController.swift in Sources */,
 				202D3B2B20826FE5003DF1B8 /* AppDelegate.swift in Sources */,
+				202D3B52208818CE003DF1B8 /* MessageTableViewCell.swift in Sources */,
+				202D3B5520881F63003DF1B8 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EUSZMP7V5X;
 				INFOPLIST_FILE = FinalProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junhaohuang.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -455,10 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EUSZMP7V5X;
 				INFOPLIST_FILE = FinalProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junhaohuang.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
