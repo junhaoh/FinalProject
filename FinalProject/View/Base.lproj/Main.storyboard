@@ -42,6 +42,18 @@
                                     <action selector="chatRoom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChX-qp-3dG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-ss-R81">
+                                <rect key="frame" x="144" y="383" width="126" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50485853329999997" green="0.68555492640000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="image:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yA1-S3-cbF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,11 +68,12 @@
                     <connections>
                         <segue destination="Q59-7w-8Ud" kind="show" identifier="toWeather" id="ad1-Of-9y4"/>
                         <segue destination="6f6-wl-89U" kind="show" identifier="toChatRoom" id="nRf-RN-QQc"/>
+                        <segue destination="pxm-Z7-Azu" kind="show" identifier="toImageML" id="XhL-CA-D4W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="-134"/>
+            <point key="canvasLocation" x="-76.811594202898561" y="-134.5108695652174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aoL-Ky-0Lu">
@@ -188,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzW-19-1X1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927.536231884058" y="-348.09782608695656"/>
+            <point key="canvasLocation" x="684" y="-965"/>
         </scene>
         <!--Chat Room-->
         <scene sceneID="uYo-EK-JDG">
@@ -205,7 +218,7 @@
                                     <constraint firstAttribute="height" constant="603" id="xDH-CB-3wG"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="FEU-aM-59H">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="FEU-aM-59H">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FEU-aM-59H" id="piw-Yd-8UD">
@@ -270,7 +283,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6I4-In-oui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913.04347826086962" y="358.69565217391306"/>
+            <point key="canvasLocation" x="812" y="-290"/>
+        </scene>
+        <!--Image Recognization-->
+        <scene sceneID="o6t-Z2-0wS">
+            <objects>
+                <viewController title="Image Recognization" id="pxm-Z7-Azu" customClass="ImageMLViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9L7-Vc-rzX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-ga-fpi">
+                                <rect key="frame" x="0.0" y="131" width="414" height="605"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBi-H0-Wrc">
+                                <rect key="frame" x="0.0" y="64" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WBi-H0-Wrc" firstAttribute="leading" secondItem="UHc-it-NW6" secondAttribute="leading" id="0gk-iP-G9y"/>
+                            <constraint firstItem="tZe-ga-fpi" firstAttribute="top" secondItem="WBi-H0-Wrc" secondAttribute="bottom" constant="19" id="4FD-5j-4MK"/>
+                            <constraint firstItem="WBi-H0-Wrc" firstAttribute="top" secondItem="UHc-it-NW6" secondAttribute="top" id="4zn-ta-0qE"/>
+                            <constraint firstItem="tZe-ga-fpi" firstAttribute="bottom" secondItem="UHc-it-NW6" secondAttribute="bottom" id="HPt-5T-Bmu"/>
+                            <constraint firstItem="WBi-H0-Wrc" firstAttribute="trailing" secondItem="UHc-it-NW6" secondAttribute="trailing" id="X6h-fF-yEj"/>
+                            <constraint firstItem="tZe-ga-fpi" firstAttribute="trailing" secondItem="UHc-it-NW6" secondAttribute="trailing" id="YpY-7r-sUO"/>
+                            <constraint firstItem="tZe-ga-fpi" firstAttribute="leading" secondItem="UHc-it-NW6" secondAttribute="leading" id="hQt-uE-Yqw"/>
+                            <constraint firstItem="tZe-ga-fpi" firstAttribute="top" secondItem="UHc-it-NW6" secondAttribute="top" constant="67" id="tCr-S5-Kdg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UHc-it-NW6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Recognization" id="Avp-cp-WYm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="eKE-KW-SYK">
+                            <connections>
+                                <action selector="camera:" destination="pxm-Z7-Azu" id="1AO-nx-g2k"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageText" destination="WBi-H0-Wrc" id="NY3-lV-qEp"/>
+                        <outlet property="imageView" destination="tZe-ga-fpi" id="gQf-bI-u89"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvR-uF-VLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.59420289855075" y="427.98913043478262"/>
         </scene>
     </scenes>
 </document>

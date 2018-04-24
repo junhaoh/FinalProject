@@ -80,6 +80,11 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "toChatRoom", sender: self)
     }
     
+    @IBAction func image(_ sender: UIButton) {
+        performSegue(withIdentifier: "toImageML", sender: self)
+    }
+    
+    
     
     
     @IBAction func logout(_ sender: UIBarButtonItem) {
