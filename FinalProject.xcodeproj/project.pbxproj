@@ -23,6 +23,10 @@
 		202D3B5520881F63003DF1B8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D3B5420881F63003DF1B8 /* Message.swift */; };
 		20A7678A208EADB800FC1450 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 20A76789208EADB700FC1450 /* Inceptionv3.mlmodel */; };
 		20A7678C208EB02000FC1450 /* ImageMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7678B208EB02000FC1450 /* ImageMLViewController.swift */; };
+		20A76790208F9F0F00FC1450 /* ARDiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7678F208F9F0F00FC1450 /* ARDiceViewController.swift */; };
+		20DB44DA208FA3A80023C923 /* diceCollada.scn in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44D9208FA3A80023C923 /* diceCollada.scn */; };
+		20DB44DC208FA3B10023C923 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44DB208FA3B10023C923 /* grid.png */; };
+		20DB44DE208FD0290023C923 /* ARRulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB44DD208FD0290023C923 /* ARRulerViewController.swift */; };
 		FE9ABEF4BFBAD1CAB2D6A4BB /* Pods_FinalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92410375D49CB60AC2E3C59 /* Pods_FinalProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,10 @@
 		202D3B5420881F63003DF1B8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		20A76789208EADB700FC1450 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../iOS11/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		20A7678B208EB02000FC1450 /* ImageMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMLViewController.swift; sourceTree = "<group>"; };
+		20A7678F208F9F0F00FC1450 /* ARDiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDiceViewController.swift; sourceTree = "<group>"; };
+		20DB44D9208FA3A80023C923 /* diceCollada.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = diceCollada.scn; path = "../../../../iOS11/Real Dicee/Real Dicee/art.scnassets/diceCollada.scn"; sourceTree = "<group>"; };
+		20DB44DB208FA3B10023C923 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid.png; path = "../../../../iOS11/Real Dicee/Real Dicee/art.scnassets/grid.png"; sourceTree = "<group>"; };
+		20DB44DD208FD0290023C923 /* ARRulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRulerViewController.swift; sourceTree = "<group>"; };
 		A54D3036B1F5D6CEA4E4C01B /* Pods-FinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.release.xcconfig"; sourceTree = "<group>"; };
 		E92410375D49CB60AC2E3C59 /* Pods_FinalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA564325C0F6816F4F133F9 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 				202D3B462086C141003DF1B8 /* WeatherViewController.swift */,
 				202D3B4C208814FF003DF1B8 /* ChatViewController.swift */,
 				20A7678B208EB02000FC1450 /* ImageMLViewController.swift */,
+				20A7678F208F9F0F00FC1450 /* ARDiceViewController.swift */,
+				20DB44DD208FD0290023C923 /* ARRulerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 				202D3B4A20881115003DF1B8 /* GoogleService-Info.plist */,
 				202D3B402082709D003DF1B8 /* Default-568h@2x.png */,
 				202D3B3120826FE7003DF1B8 /* Assets.xcassets */,
+				20DB44D9208FA3A80023C923 /* diceCollada.scn */,
+				20DB44DB208FA3B10023C923 /* grid.png */,
 				20A76789208EADB700FC1450 /* Inceptionv3.mlmodel */,
 				202D3B422082784A003DF1B8 /* Auth0.plist */,
 			);
@@ -223,10 +235,12 @@
 			files = (
 				202D3B432082784A003DF1B8 /* Auth0.plist in Resources */,
 				202D3B3520826FE7003DF1B8 /* LaunchScreen.storyboard in Resources */,
+				20DB44DC208FA3B10023C923 /* grid.png in Resources */,
 				202D3B412082709D003DF1B8 /* Default-568h@2x.png in Resources */,
 				202D3B3220826FE7003DF1B8 /* Assets.xcassets in Resources */,
 				202D3B3020826FE6003DF1B8 /* Main.storyboard in Resources */,
 				202D3B53208818CE003DF1B8 /* MessageTableViewCell.xib in Resources */,
+				20DB44DA208FA3A80023C923 /* diceCollada.scn in Resources */,
 				202D3B4B20881115003DF1B8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +330,8 @@
 				202D3B2B20826FE5003DF1B8 /* AppDelegate.swift in Sources */,
 				20A7678A208EADB800FC1450 /* Inceptionv3.mlmodel in Sources */,
 				202D3B52208818CE003DF1B8 /* MessageTableViewCell.swift in Sources */,
+				20DB44DE208FD0290023C923 /* ARRulerViewController.swift in Sources */,
+				20A76790208F9F0F00FC1450 /* ARDiceViewController.swift in Sources */,
 				202D3B5520881F63003DF1B8 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -84,6 +84,15 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "toImageML", sender: self)
     }
     
+    @IBAction func AR(_ sender: UIButton) {
+        performSegue(withIdentifier: "toAR", sender: self)
+    }
+    
+    
+    
+    
+    
+    
     
     
     
