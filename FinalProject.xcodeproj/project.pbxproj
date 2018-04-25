@@ -27,6 +27,11 @@
 		20DB44DA208FA3A80023C923 /* diceCollada.scn in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44D9208FA3A80023C923 /* diceCollada.scn */; };
 		20DB44DC208FA3B10023C923 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44DB208FA3B10023C923 /* grid.png */; };
 		20DB44DE208FD0290023C923 /* ARRulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB44DD208FD0290023C923 /* ARRulerViewController.swift */; };
+		20DB44EE208FFC4C0023C923 /* icons8-male-user-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44ED208FFC4C0023C923 /* icons8-male-user-48.png */; };
+		20DB44F02090012D0023C923 /* icons8-dice-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44EF2090012C0023C923 /* icons8-dice-30.png */; };
+		20DB44F2209001420023C923 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44F1209001410023C923 /* background.jpg */; };
+		20DB44F4209001580023C923 /* icons8-login-as-user-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44F3209001580023C923 /* icons8-login-as-user-100.png */; };
+		20DB44F6209001830023C923 /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20DB44F5209001830023C923 /* main.jpg */; };
 		FE9ABEF4BFBAD1CAB2D6A4BB /* Pods_FinalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92410375D49CB60AC2E3C59 /* Pods_FinalProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		20DB44D9208FA3A80023C923 /* diceCollada.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = diceCollada.scn; path = "../../../../iOS11/Real Dicee/Real Dicee/art.scnassets/diceCollada.scn"; sourceTree = "<group>"; };
 		20DB44DB208FA3B10023C923 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid.png; path = "../../../../iOS11/Real Dicee/Real Dicee/art.scnassets/grid.png"; sourceTree = "<group>"; };
 		20DB44DD208FD0290023C923 /* ARRulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRulerViewController.swift; sourceTree = "<group>"; };
+		20DB44ED208FFC4C0023C923 /* icons8-male-user-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-male-user-48.png"; sourceTree = "<group>"; };
+		20DB44EF2090012C0023C923 /* icons8-dice-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-dice-30.png"; sourceTree = "<group>"; };
+		20DB44F1209001410023C923 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		20DB44F3209001580023C923 /* icons8-login-as-user-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-login-as-user-100.png"; sourceTree = "<group>"; };
+		20DB44F5209001830023C923 /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main.jpg; sourceTree = "<group>"; };
 		A54D3036B1F5D6CEA4E4C01B /* Pods-FinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.release.xcconfig"; sourceTree = "<group>"; };
 		E92410375D49CB60AC2E3C59 /* Pods_FinalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA564325C0F6816F4F133F9 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +153,11 @@
 				202D3B402082709D003DF1B8 /* Default-568h@2x.png */,
 				202D3B3120826FE7003DF1B8 /* Assets.xcassets */,
 				20DB44D9208FA3A80023C923 /* diceCollada.scn */,
+				20DB44EF2090012C0023C923 /* icons8-dice-30.png */,
+				20DB44ED208FFC4C0023C923 /* icons8-male-user-48.png */,
+				20DB44F1209001410023C923 /* background.jpg */,
+				20DB44F5209001830023C923 /* main.jpg */,
+				20DB44F3209001580023C923 /* icons8-login-as-user-100.png */,
 				20DB44DB208FA3B10023C923 /* grid.png */,
 				20A76789208EADB700FC1450 /* Inceptionv3.mlmodel */,
 				202D3B422082784A003DF1B8 /* Auth0.plist */,
@@ -236,12 +251,17 @@
 				202D3B432082784A003DF1B8 /* Auth0.plist in Resources */,
 				202D3B3520826FE7003DF1B8 /* LaunchScreen.storyboard in Resources */,
 				20DB44DC208FA3B10023C923 /* grid.png in Resources */,
+				20DB44F4209001580023C923 /* icons8-login-as-user-100.png in Resources */,
 				202D3B412082709D003DF1B8 /* Default-568h@2x.png in Resources */,
 				202D3B3220826FE7003DF1B8 /* Assets.xcassets in Resources */,
+				20DB44F2209001420023C923 /* background.jpg in Resources */,
 				202D3B3020826FE6003DF1B8 /* Main.storyboard in Resources */,
+				20DB44F6209001830023C923 /* main.jpg in Resources */,
 				202D3B53208818CE003DF1B8 /* MessageTableViewCell.xib in Resources */,
 				20DB44DA208FA3A80023C923 /* diceCollada.scn in Resources */,
 				202D3B4B20881115003DF1B8 /* GoogleService-Info.plist in Resources */,
+				20DB44EE208FFC4C0023C923 /* icons8-male-user-48.png in Resources */,
+				20DB44F02090012D0023C923 /* icons8-dice-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

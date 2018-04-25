@@ -30,8 +30,9 @@ class LoginViewController: UIViewController {
             }
             
             .withStyle {
-                $0.title = "Welcome!"
+                $0.title = ""
                 $0.primaryColor = UIColor(red: 0.1686, green: 0.6549, blue: 0.9373, alpha: 1.0)
+                $0.logo = LazyImage(name: "icons8-login-as-user-100.png")
             }
             
             .onAuth { credentials in
@@ -87,14 +88,6 @@ class LoginViewController: UIViewController {
     @IBAction func AR(_ sender: UIButton) {
         performSegue(withIdentifier: "toAR", sender: self)
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     @IBAction func logout(_ sender: UIBarButtonItem) {
         presentLogin()

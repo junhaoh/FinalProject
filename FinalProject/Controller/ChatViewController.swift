@@ -38,7 +38,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.messageBody.text = messageArray[indexPath.row].messageBody
         cell.username.text = messageArray[indexPath.row].sender
-        cell.userImage.image = UIImage(named: "sunny.png")
+        cell.userImage.image = UIImage(named: "icons8-male-user-48.png")
         
         return cell
     }
