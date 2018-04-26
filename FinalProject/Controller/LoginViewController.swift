@@ -89,6 +89,10 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "toAR", sender: self)
     }
     
+    @IBAction func restaurant(_ sender: Any) {
+        performSegue(withIdentifier: "toMap", sender: self)
+    }
+    
     @IBAction func logout(_ sender: UIBarButtonItem) {
         presentLogin()
     }
