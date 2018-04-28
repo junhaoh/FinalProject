@@ -66,7 +66,7 @@ class MapViewController: UIViewController {
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
         mapView.clear()
         
-        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
+        dataProvider.fetchPlacesNearCoordinate(coordinate, radius: searchRadius, types: searchedTypes) { places in
             places.forEach {
                 let marker = PlaceMarker(place: $0)
                 marker.map = self.mapView

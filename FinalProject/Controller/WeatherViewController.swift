@@ -36,7 +36,14 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
 
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func getWeatherData(url: String, parameters: [String: String]) {

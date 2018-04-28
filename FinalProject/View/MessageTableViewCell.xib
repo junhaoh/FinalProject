@@ -26,7 +26,7 @@
                             <constraint firstAttribute="width" constant="67" id="Cds-P6-36m"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHe-UD-W2G">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHe-UD-W2G" userLabel="Message Background">
                         <rect key="frame" x="80" y="5" width="231" height="67"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElI-wj-ZHD">
@@ -70,6 +70,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="messageBackground" destination="RHe-UD-W2G" id="ieh-4E-dWA"/>
                 <outlet property="messageBody" destination="R0k-Jd-5hj" id="O3M-Ex-ZHY"/>
                 <outlet property="userImage" destination="Qkd-2i-H3P" id="X9D-Eh-Jj3"/>
                 <outlet property="username" destination="ElI-wj-ZHD" id="bhe-57-liA"/>

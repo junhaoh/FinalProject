@@ -25,11 +25,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-O1-WEF">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="cMq-F9-L3e">
-                                        <rect key="frame" x="120.00000000000001" y="100" width="174.33333333333337" height="472"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="cMq-F9-L3e">
+                                        <rect key="frame" x="130" y="120" width="154" height="432"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df8-9U-nyr">
-                                                <rect key="frame" x="0.0" y="0.0" width="174.33333333333334" height="38.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="38.333333333333336"/>
                                                 <color key="backgroundColor" red="0.50485853329999997" green="0.68555492640000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <state key="normal" title="Weather">
@@ -40,7 +40,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiM-1F-JzK">
-                                                <rect key="frame" x="0.0" y="108.33333333333331" width="174.33333333333334" height="38.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="98.333333333333314" width="154" height="38.333333333333343"/>
                                                 <color key="backgroundColor" red="0.50485853329999997" green="0.68555492640000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <state key="normal" title="Restaurant">
@@ -51,7 +51,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spT-Ai-4NG">
-                                                <rect key="frame" x="0.0" y="216.66666666666669" width="174.33333333333334" height="38.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="196.66666666666669" width="154" height="38.666666666666657"/>
                                                 <color key="backgroundColor" red="0.50485853329999997" green="0.68555492640000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <state key="normal" title="Chat Room">
@@ -62,7 +62,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-ss-R81">
-                                                <rect key="frame" x="0.0" y="325.33333333333331" width="174.33333333333334" height="38.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="295.33333333333331" width="154" height="38.333333333333314"/>
                                                 <color key="backgroundColor" red="0.50485853329999997" green="0.68555492640000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <state key="normal" title="Image">
@@ -73,7 +73,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8H-Db-2z2">
-                                                <rect key="frame" x="0.0" y="433.66666666666663" width="174.33333333333334" height="38.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="393.66666666666663" width="154" height="38.333333333333314"/>
                                                 <color key="backgroundColor" red="0.50485853329999997" green="0.68555492640000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <state key="normal" title="AR Game">
@@ -87,12 +87,12 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="leading" secondItem="fyd-O1-WEF" secondAttribute="leading" constant="120" id="7Gs-bA-8p5"/>
-                                    <constraint firstAttribute="trailing" secondItem="cMq-F9-L3e" secondAttribute="trailing" constant="120" id="Jak-rT-r49"/>
-                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="centerY" secondItem="fyd-O1-WEF" secondAttribute="centerY" id="U2a-zX-3JM"/>
-                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="top" secondItem="fyd-O1-WEF" secondAttribute="top" constant="100" id="WIE-FB-g3D"/>
-                                    <constraint firstAttribute="bottom" secondItem="cMq-F9-L3e" secondAttribute="bottom" constant="100" id="Zec-Mx-YeW"/>
-                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="centerX" secondItem="fyd-O1-WEF" secondAttribute="centerX" id="uA7-Zq-oGD"/>
+                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="top" secondItem="fyd-O1-WEF" secondAttribute="top" constant="120" id="264-Xh-Fer"/>
+                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="centerY" secondItem="fyd-O1-WEF" secondAttribute="centerY" id="A9n-mK-iw2"/>
+                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="leading" secondItem="fyd-O1-WEF" secondAttribute="leading" constant="130" id="Xe5-mJ-a7W"/>
+                                    <constraint firstAttribute="trailing" secondItem="cMq-F9-L3e" secondAttribute="trailing" constant="130" id="ktQ-GI-bGa"/>
+                                    <constraint firstAttribute="bottom" secondItem="cMq-F9-L3e" secondAttribute="bottom" constant="120" id="l7J-ee-Pec"/>
+                                    <constraint firstItem="cMq-F9-L3e" firstAttribute="centerX" secondItem="fyd-O1-WEF" secondAttribute="centerX" id="qE2-vC-s2n"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -143,7 +143,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QH2-ku-iFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-878" y="-134"/>
+            <point key="canvasLocation" x="-1072" y="-135"/>
         </scene>
         <!--Weather-->
         <scene sceneID="Brx-Zc-a0w">
@@ -404,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6I4-In-oui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="-290"/>
+            <point key="canvasLocation" x="928" y="-395"/>
         </scene>
         <!--AR Ruler-->
         <scene sceneID="Sxo-TA-M04">
@@ -434,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72e-ya-tOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="1352"/>
+            <point key="canvasLocation" x="1441" y="1378"/>
         </scene>
         <!--AR Dice-->
         <scene sceneID="iB1-AJ-LX9">
@@ -451,7 +451,7 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="73"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="fax-Mz-ZHg">
-                                        <rect key="frame" x="97" y="16" width="220" height="40"/>
+                                        <rect key="frame" x="97.333333333333314" y="16" width="220" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlK-FE-mkg">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
@@ -509,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2T-KA-XeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-542" y="1352"/>
+            <point key="canvasLocation" x="562" y="1392"/>
         </scene>
         <!--Choose Types-->
         <scene sceneID="aDy-RM-KsW">
@@ -553,7 +553,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wff-W4-duL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1919" y="629"/>
+            <point key="canvasLocation" x="-1920" y="651"/>
         </scene>
         <!--Map-->
         <scene sceneID="I2i-wS-rvN">
@@ -566,8 +566,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cv4-jU-YJB" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jd1-nR-h9x" userLabel="Map Center Pin Image">
-                                        <rect key="frame" x="192" y="340.66666666666669" width="30" height="55"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-map-pin-48" translatesAutoresizingMaskIntoConstraints="NO" id="jd1-nR-h9x" userLabel="Map Center Pin Image">
+                                        <rect key="frame" x="192.33333333333334" y="340.66666666666669" width="30" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="jmC-qg-HWO"/>
                                             <constraint firstAttribute="width" constant="30" id="v3n-J4-qg6"/>
@@ -602,7 +602,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="wxe-EO-rlX">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="FJi-AF-OQ5">
+                            <barButtonItem title="Item" image="filter" id="FJi-AF-OQ5">
                                 <connections>
                                     <segue destination="yce-0V-A0E" kind="presentation" identifier="Types Segue" id="PDd-ug-wHP"/>
                                 </connections>
@@ -623,7 +623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LD8-my-UGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="688"/>
+            <point key="canvasLocation" x="-314" y="651"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dqr-wB-yNB">
@@ -688,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GvR-uF-VLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718.840579710145" y="427.98913043478262"/>
+            <point key="canvasLocation" x="1700" y="211"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xWF-Rh-y3T">
@@ -706,13 +706,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTK-h4-4Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1004" y="629"/>
+            <point key="canvasLocation" x="-1072" y="651"/>
         </scene>
     </scenes>
     <resources>
         <image name="background.jpg" width="736" height="1370"/>
+        <image name="filter" width="25" height="25"/>
         <image name="icons8-dice-30.png" width="30" height="30"/>
         <image name="icons8-length-30.png" width="30" height="30"/>
+        <image name="icons8-map-pin-48" width="48" height="48"/>
         <image name="main.jpg" width="736" height="1308"/>
     </resources>
 </document>

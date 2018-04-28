@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import Lock
+import Auth0
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
@@ -15,10 +17,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
+    var profileName = ""
     var messageArray = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getProfile()
         
         messageTableView.delegate = self
         messageTableView.dataSource = self
@@ -33,12 +38,45 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    func getProfile() {
+        credentialsManager.credentials { (error, credentials) in
+            guard error == nil, let credentials = credentials else {
+                return print("Error: \(String(describing: error))")
+            }
+            
+            guard let accessToken = credentials.accessToken else { return }
+            
+            Auth0
+                .authentication()
+                .userInfo(withAccessToken: accessToken)
+                
+                .start { result in
+                    switch result {
+                    case .success(let profile):
+                        print("User Profile: \(profile)")
+                        self.profileName = profile.name ?? "Junhao Huang"
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+        
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! MessageTableViewCell
         
         cell.messageBody.text = messageArray[indexPath.row].messageBody
         cell.username.text = messageArray[indexPath.row].sender
         cell.userImage.image = UIImage(named: "icons8-male-user-48.png")
+        
+        if cell.username.text == "jh@junhaohuang.com" {
+            cell.messageBackground.backgroundColor = UIColor(red:0.71, green:0.92, blue:0.91, alpha:1.0)
+            
+        } else {
+            cell.userImage.image = UIImage(named: "icons8-circled-user-female-skin-type-1-2-48.png")
+            cell.messageBackground.backgroundColor = UIColor(red:0.86, green:0.79, blue:0.89, alpha:1.0)
+        }
         
         return cell
     }
@@ -58,7 +96,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.5) {
-            self.heightConstraint.constant = 327
+            self.heightConstraint.constant = 368 // 69 + 333 - 34
             self.view.layoutIfNeeded()
         }
     }
@@ -76,7 +114,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let messageDB = Database.database().reference().child("Messages")
         
-        let messageDict = ["Sender": "jh@junhaohuang.com",
+        let messageDict = ["Sender": profileName,
                            "MessageBody": messageTextField.text!]
         
         messageDB.childByAutoId().setValue(messageDict) {
@@ -92,7 +130,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.messageTextField.text = ""
         }
         
-        
     }
     
     func monitorMessages() {
@@ -106,7 +143,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             let newMessage = Message()
             newMessage.messageBody = text
             newMessage.sender = sender
-
             self.messageArray.append(newMessage)
 
             self.configureTableView()

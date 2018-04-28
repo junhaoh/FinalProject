@@ -10,7 +10,11 @@ import UIKit
 import Auth0
 import Lock
 
+let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+
 class LoginViewController: UIViewController {
+    
+    var profileName = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +23,6 @@ class LoginViewController: UIViewController {
     }
     
     func presentLogin() {
-        let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
-        
         Lock
             .classic()
             .withOptions {
@@ -37,28 +39,6 @@ class LoginViewController: UIViewController {
             
             .onAuth { credentials in
                 credentialsManager.store(credentials: credentials)
-                
-                credentialsManager.credentials { (error, credentials) in
-                    guard error == nil, let credentials = credentials else {
-                        return print("Error: \(String(describing: error))")
-                    }
-                    
-                    guard let accessToken = credentials.accessToken else { return }
-                    
-                    Auth0
-                        .authentication()
-                        .userInfo(withAccessToken: accessToken)
-                        .start { result in
-                            switch result {
-                            case .success(let profile):
-                                print("User Profile: \(profile)")
-                            //self.profile = profile
-                            case .failure(let error):
-                                print(error)
-                            }
-                    }
-                    
-                }
                 print("Obtained credentials: \(credentials)")
             }
             
@@ -71,7 +51,6 @@ class LoginViewController: UIViewController {
             }
             .present(from: self)
     }
-    
     
     @IBAction func weather(_ sender: UIButton) {
         performSegue(withIdentifier: "toWeather", sender: self)
